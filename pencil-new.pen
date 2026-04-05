@@ -1,0 +1,575 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "IbnUa",
+      "x": 0,
+      "y": 0,
+      "name": "Dark Mode Frame",
+      "clip": true,
+      "width": 1200,
+      "height": 800,
+      "fill": "#09090B",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "aN0Vu",
+          "x": -100,
+          "y": -100,
+          "name": "blob1",
+          "opacity": 0.6,
+          "fill": "#2563EB",
+          "width": 600,
+          "height": 600,
+          "effect": {
+            "type": "blur",
+            "radius": 150
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "EuOrQ",
+          "x": 800,
+          "y": 400,
+          "name": "blob2",
+          "opacity": 0.5,
+          "fill": "#9333EA",
+          "width": 500,
+          "height": 500,
+          "effect": {
+            "type": "blur",
+            "radius": 150
+          }
+        },
+        {
+          "type": "frame",
+          "id": "RQamL",
+          "x": 40,
+          "y": 40,
+          "name": "darkNav",
+          "width": 1120,
+          "fill": "#ffffff0d",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#ffffff1a"
+          },
+          "effect": {
+            "type": "background_blur",
+            "radius": 24
+          },
+          "padding": [
+            12,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "AJor1",
+              "name": "logoDark",
+              "fill": "#FFFFFF",
+              "content": "Rishi",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "kZWFu",
+              "name": "navLinksDark",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DTVlF",
+                  "fill": "#A1A1AA",
+                  "content": "Work",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cna02",
+                  "fill": "#A1A1AA",
+                  "content": "Experience",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vRf9a",
+                  "fill": "#A1A1AA",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uC77R",
+          "x": 40,
+          "y": 160,
+          "name": "darkHero",
+          "width": 1120,
+          "fill": "#ffffff08",
+          "cornerRadius": 32,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#ffffff1a"
+          },
+          "effect": {
+            "type": "background_blur",
+            "radius": 32
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 64,
+          "children": [
+            {
+              "type": "text",
+              "id": "gsql1",
+              "name": "heroTitleDark",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "AI & Automation Specialist",
+              "fontFamily": "Inter",
+              "fontSize": 64,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "9zvmq",
+              "name": "heroSubDark",
+              "fill": "#A1A1AA",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "I build autonomous AI agents and scalable automation ecosystems using n8n.",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "OgPQB",
+              "name": "btnDark",
+              "fill": "#2563ebcc",
+              "cornerRadius": 100,
+              "effect": {
+                "type": "background_blur",
+                "radius": 10
+              },
+              "padding": [
+                16,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Muryx",
+                  "fill": "#FFFFFF",
+                  "content": "Let's Talk",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ymhUT",
+          "x": 40,
+          "y": 560,
+          "name": "cardGridDark",
+          "width": 1120,
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "no9D4",
+              "name": "card1Dark",
+              "width": "fill_container",
+              "height": 200,
+              "fill": "#ffffff0d",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#ffffff1a"
+              },
+              "effect": {
+                "type": "background_blur",
+                "radius": 24
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dyFmJ",
+                  "fill": "#FFFFFF",
+                  "content": "AI Sales Automation",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "jnbGq",
+                  "fill": "#2563EB",
+                  "content": "10,000+ daily leads via n8n",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "azKVn",
+              "name": "card2Dark",
+              "width": "fill_container",
+              "height": 200,
+              "fill": "#ffffff0d",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#ffffff1a"
+              },
+              "effect": {
+                "type": "background_blur",
+                "radius": 24
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8YGWB",
+                  "fill": "#FFFFFF",
+                  "content": "Intelligent Store",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "hc0jO",
+                  "fill": "#2563EB",
+                  "content": "Shopify API integrations",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vrnIw",
+      "x": 0,
+      "y": 0,
+      "name": "Light Mode Frame",
+      "clip": true,
+      "width": 1200,
+      "height": 800,
+      "fill": "#FAFAFA",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "b9WNd",
+          "x": -100,
+          "y": -100,
+          "name": "blob1L",
+          "opacity": 0.6,
+          "fill": "#60A5FA",
+          "width": 600,
+          "height": 600,
+          "effect": {
+            "type": "blur",
+            "radius": 150
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "qZMCS",
+          "x": 800,
+          "y": 400,
+          "name": "blob2L",
+          "opacity": 0.5,
+          "fill": "#F472B6",
+          "width": 500,
+          "height": 500,
+          "effect": {
+            "type": "blur",
+            "radius": 150
+          }
+        },
+        {
+          "type": "frame",
+          "id": "moSaA",
+          "x": 40,
+          "y": 40,
+          "name": "lightNav",
+          "width": 1120,
+          "fill": "#ffffff66",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#ffffff99"
+          },
+          "effect": {
+            "type": "background_blur",
+            "radius": 24
+          },
+          "padding": [
+            12,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "mCIv8",
+              "name": "logoLight",
+              "fill": "#18181B",
+              "content": "Rishi",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "votXI",
+              "name": "navLinksLight",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x0V0Z",
+                  "fill": "#3F3F46",
+                  "content": "Work",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "WGkJZ",
+                  "fill": "#3F3F46",
+                  "content": "Experience",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FwnHp",
+                  "fill": "#3F3F46",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E5iLJ",
+          "x": 40,
+          "y": 160,
+          "name": "lightHero",
+          "width": 1120,
+          "fill": "#ffffff66",
+          "cornerRadius": 32,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#ffffff99"
+          },
+          "effect": {
+            "type": "background_blur",
+            "radius": 32
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 64,
+          "children": [
+            {
+              "type": "text",
+              "id": "9MsLZ",
+              "name": "heroTitleLight",
+              "fill": "#09090B",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "AI & Automation Specialist",
+              "fontFamily": "Inter",
+              "fontSize": 64,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "hWhmR",
+              "name": "heroSubLight",
+              "fill": "#3F3F46",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "I build autonomous AI agents and scalable automation ecosystems using n8n.",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "hyWvM",
+              "name": "btnLight",
+              "fill": "#2563ebe6",
+              "cornerRadius": 100,
+              "effect": {
+                "type": "background_blur",
+                "radius": 10
+              },
+              "padding": [
+                16,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ia8nO",
+                  "fill": "#FFFFFF",
+                  "content": "Let's Talk",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "99CDj",
+          "x": 40,
+          "y": 560,
+          "name": "cardGridLight",
+          "width": 1120,
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HC45c",
+              "name": "card1Light",
+              "width": "fill_container",
+              "height": 200,
+              "fill": "#ffffff66",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#ffffff99"
+              },
+              "effect": {
+                "type": "background_blur",
+                "radius": 24
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OAEOj",
+                  "fill": "#09090B",
+                  "content": "AI Sales Automation",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "38GVy",
+                  "fill": "#2563EB",
+                  "content": "10,000+ daily leads via n8n",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "2n4eu",
+              "name": "card2Light",
+              "width": "fill_container",
+              "height": 200,
+              "fill": "#ffffff66",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#ffffff99"
+              },
+              "effect": {
+                "type": "background_blur",
+                "radius": 24
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "szkiu",
+                  "fill": "#09090B",
+                  "content": "Intelligent Store",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "QmICC",
+                  "fill": "#2563EB",
+                  "content": "Shopify API integrations",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Madhavan | AI & Automation Specialist</title>
+    <meta name="description" content="Portfolio of Rishi Madhavan Ramesh Babu — AI & Automation Specialist building autonomous agents, n8n workflows, and scalable AI ecosystems.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- ═══ AMBIENT BLOBS ═══ -->
+    <div class="blob-canvas">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+    </div>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <div class="nav-wrapper">
+        <nav class="navbar glass glass--static">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                Rishi
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-btn" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ph ph-sun"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+
+        <!-- ═══ SECTION 1: HERO (Scroll-Synced Frame Animation) ═══ -->
+        <section class="hero-sequence" id="hero-sequence">
+            <!-- Canvas for frame-by-frame animation -->
+            <canvas id="hero-canvas"></canvas>
+
+            <!-- PHASE 1: Hero text overlay (fades out 0-30%) -->
+            <div class="hero-overlay" id="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge glass glass--static">
+                            <span class="status-dot"></span>
+                            Available for new opportunities
+                        </div>
+                        <h1>I'm <span class="accent">Rishi,</span><br>AI & Automation Specialist</h1>
+                        <p class="hero-description">I design autonomous AI agents and build scalable n8n automation ecosystems that cut operational costs by 65% and accelerate business workflows.</p>
+                        <div class="hero-cta-row">
+                            <a href="#projects" class="btn-primary">
+                                <i class="ph ph-squares-four"></i>
+                                My Projects
+                            </a>
+                            <a href="#contact" class="btn-secondary">
+                                <i class="ph ph-envelope-simple"></i>
+                                Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 2: Mid-scroll stats (appears 25-55%, fades 55-65%) -->
+            <div class="mid-stats" id="mid-stats">
+                <div class="mid-stat mid-stat--left" data-index="0">
+                    <span class="mid-stat-value">10,000+</span>
+                    <span class="mid-stat-label">Leads processed daily</span>
+                </div>
+                <div class="mid-stat mid-stat--right" data-index="1">
+                    <span class="mid-stat-value">−65%</span>
+                    <span class="mid-stat-label">Operational overhead</span>
+                </div>
+                <div class="mid-stat mid-stat--left mid-stat--low" data-index="2">
+                    <span class="mid-stat-value">+27%</span>
+                    <span class="mid-stat-label">Lead accuracy boost</span>
+                </div>
+                <div class="mid-stat mid-stat--right mid-stat--low" data-index="3">
+                    <span class="mid-stat-value">2+</span>
+                    <span class="mid-stat-label">Years building AI systems</span>
+                </div>
+
+                <!-- CENTERPIECE to fill the void -->
+                <div class="mid-stat-center" id="mid-stat-center">
+                    <div class="core-orb">
+                        <div class="core-ring core-ring-1"></div>
+                        <div class="core-ring core-ring-2"></div>
+                        <div class="core-ring core-ring-3"></div>
+                        <div class="core-icon">
+                            <img src="https://api.iconify.design/ph:cpu-duotone.svg?color=%23ffffff" alt="AI Core">
+                        </div>
+                    </div>
+                    <div class="core-text">
+                        <div class="core-title">Agentic OS</div>
+                        <div class="core-subtitle">Orchestrating autonomous logic</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 3: Tool logo bubbles — funnel layout: wide top, closer bottom -->
+            <div class="tool-logos" id="tool-logos">
+
+                <!-- CORNER SKILLS (Creative Void Fillers) -->
+                <div class="corner-skill skill-tl">
+                    <div class="skill-title">UI & Aesthetics</div>
+                    <div class="skill-tags">React • Glassmorphism • Motion</div>
+                </div>
+                
+                <div class="corner-skill skill-tr">
+                    <div class="skill-title">AI & Agents</div>
+                    <div class="skill-tags">LLM Orchestration • RAG • Prompts</div>
+                </div>
+
+                <div class="corner-skill skill-bl">
+                    <div class="skill-title">Backend Systems</div>
+                    <div class="skill-tags">Node.js • Python • Vector DBs</div>
+                </div>
+
+                <div class="corner-skill skill-br">
+                    <div class="skill-title">Automations</div>
+                    <div class="skill-tags">n8n • Webhooks • CI/CD Pipelines</div>
+                </div>
+
+                <!-- TOP ROW — far apart, smaller, 2 of these blurred -->
+
+                <!-- ChatGPT — top-left far -->
+                <div class="tool-bubble tooltip-below" data-tool="chatgpt" style="--pop-x:-360px;--pop-y:-80px;--glow-color:rgba(16,163,127,0.8);--size:56px;--img-size:32px;--blur:3px;--rot:-6deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg" alt="ChatGPT" style="filter:invert(1) brightness(1.2)">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">ChatGPT</div>
+                        <div class="ttip-desc">Prompt engineering & APIs</div>
+                        <div class="ttip-exp" style="color:#10A37F">
+                            <span class="exp-text" data-num="2">0</span><span class="exp-suffix">+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VS Code — top-right far -->
+                <div class="tool-bubble tooltip-below" data-tool="vscode" style="--pop-x:380px;--pop-y:-60px;--glow-color:rgba(0,122,204,0.8);--size:60px;--img-size:34px;--blur:4px;--rot:7deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://api.iconify.design/logos:visual-studio-code.svg" alt="VS Code">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">VS Code</div>
+                        <div class="ttip-desc">Primary development IDE</div>
+                        <div class="ttip-exp" style="color:#007ACC">
+                            <span class="exp-text" data-num="2">0</span><span class="exp-suffix">+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIDDLE ROW — moderate distance, medium sizes, in focus -->
+
+                <!-- n8n — mid-left -->
+                <div class="tool-bubble" data-tool="n8n" style="--pop-x:-420px;--pop-y:100px;--glow-color:rgba(234,75,113,0.8);--size:80px;--img-size:45px;--blur:0px;--rot:-10deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://api.iconify.design/simple-icons:n8n.svg?color=%23EA4B71" alt="n8n">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">n8n</div>
+                        <div class="ttip-desc">Primary automation platform</div>
+                        <div class="ttip-exp" style="color:#EA4B71">
+                            <span class="exp-text" data-num="1.5">0</span><span class="exp-suffix">+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Claude Code — mid-right -->
+                <div class="tool-bubble" data-tool="claude" style="--pop-x:260px;--pop-y:30px;--glow-color:rgba(212,165,116,0.8);--size:76px;--img-size:42px;--blur:0px;--rot:-8deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg" alt="Claude Code" style="filter: brightness(0) saturate(100%) invert(80%) sepia(30%) saturate(600%) hue-rotate(340deg)">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">Claude Code</div>
+                        <div class="ttip-desc">Agentic AI development</div>
+                        <div class="ttip-exp" style="color:#D4A574">
+                            <span class="exp-text" data-num="1">0</span><span class="exp-suffix">+ year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cursor — mid-far-left -->
+                <div class="tool-bubble" data-tool="cursor" style="--pop-x:-240px;--pop-y:10px;--glow-color:rgba(255,255,255,0.6);--size:64px;--img-size:36px;--blur:0px;--rot:8deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cursor.svg" alt="Cursor" style="filter:invert(1)">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">Cursor</div>
+                        <div class="ttip-desc">AI-powered code editor</div>
+                        <div class="ttip-exp" style="color:#ffffff">
+                            <span class="exp-text" data-num="1">0</span><span class="exp-suffix">+ year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW — closer together, bigger, all in focus -->
+
+                <!-- Supabase — bottom-left -->
+                <div class="tool-bubble" data-tool="supabase" style="--pop-x:-280px;--pop-y:200px;--glow-color:rgba(62,207,142,0.8);--size:72px;--img-size:40px;--blur:0px;--rot:-5deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://api.iconify.design/logos:supabase-icon.svg" alt="Supabase">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">Supabase</div>
+                        <div class="ttip-desc">Backend & real-time DB</div>
+                        <div class="ttip-exp" style="color:#3ECF8E">
+                            <span class="exp-text" data-num="1">0</span><span class="exp-suffix">+ year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lovable — bottom-right -->
+                <div class="tool-bubble" data-tool="lovable" style="--pop-x:440px;--pop-y:120px;--glow-color:rgba(255,51,102,0.8);--size:68px;--img-size:38px;--blur:0px;--rot:12deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/lovable.svg" alt="Lovable" style="filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(4000%) hue-rotate(330deg) brightness(1.1)">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">Lovable</div>
+                        <div class="ttip-desc">AI app builder</div>
+                        <div class="ttip-exp" style="color:#FF3366">
+                            <span class="exp-text" data-num="6">0</span><span class="exp-suffix"> months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Antigravity — bottom-center-right -->
+                <div class="tool-bubble" data-tool="antigravity" style="--pop-x:320px;--pop-y:220px;--glow-color:rgba(96,165,250,0.8);--size:84px;--img-size:48px;--blur:0px;--rot:5deg;">
+                    <div class="tool-bubble-inner">
+                        <img src="https://api.iconify.design/logos:google-gemini.svg" alt="Antigravity">
+                    </div>
+                    <div class="tool-tooltip">
+                        <div class="ttip-name">Antigravity</div>
+                        <div class="ttip-desc">AI coding assistant</div>
+                        <div class="ttip-exp" style="color:#60A5FA">
+                            <span class="exp-text" data-num="6">0</span><span class="exp-suffix"> months</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="seq-loader" id="seq-loader">
+                <div class="seq-loader-bar"></div>
+                <span>Loading experience...</span>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 2: ABOUT ═══ -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-card glass glass--strong reveal">
+                    <div class="section-label"><i class="ph ph-user-circle"></i> Who Am I?</div>
+                    <h2>Building the Future with AI Agents</h2>
+                    <p class="about-text">I'm a hands-on AI & Automation specialist who bridges the gap between cutting-edge LLMs and real-world business operations. My sweet spot is turning chaotic manual processes into intelligent, self-running systems using n8n, OpenAI, Claude, and ElevenLabs.</p>
+                    <p class="about-text">Programming automation is my passion. Whether it's designing an agentic voice bot that handles thousands of calls or scripting a pipeline that forecasts churn — I love making machines do the heavy lifting.</p>
+                    <a href="#projects" class="btn-secondary">
+                        <i class="ph ph-arrow-down"></i>
+                        See My Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 3: SKILLS (BENTO GRID) ═══ -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="ph ph-lightning"></i> Core Stack</div>
+                    <h2>My Skills</h2>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-flow-arrow"></i></div>
+                        <h4>n8n</h4>
+                        <p>Workflow Automation</p>
+                    </div>
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-brain"></i></div>
+                        <h4>OpenAI / Gemini</h4>
+                        <p>LLM Integration</p>
+                    </div>
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-robot"></i></div>
+                        <h4>AI Voice Agents</h4>
+                        <p>ElevenLabs & Retell</p>
+                    </div>
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-database"></i></div>
+                        <h4>Supabase</h4>
+                        <p>Backend & Auth</p>
+                    </div>
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-code"></i></div>
+                        <h4>Python / JS</h4>
+                        <p>Scripting Logic</p>
+                    </div>
+                    <div class="bento-item glass reveal">
+                        <div class="bento-icon"><i class="ph ph-chat-circle-dots"></i></div>
+                        <h4>Prompt Engineering</h4>
+                        <p>System Design</p>
+                    </div>
+                    <div class="bento-item bento-item--wide bento-item--cta glass reveal">
+                        <div class="bento-icon"><i class="ph ph-trophy"></i></div>
+                        <h4>2+ Years Building AI Systems</h4>
+                        <p>Enterprise-scale automation for EdTech, E-Commerce & Gifting</p>
+                    </div>
+                </div>
+
+                <div class="skills-bar glass glass--static reveal">
+                    <span class="section-label" style="margin-bottom:0"><i class="ph ph-plus-circle"></i> Additional</span>
+                    <span class="skill-name"><i class="ph ph-cloud"></i> GCP</span>
+                    <span class="skill-name"><i class="ph ph-chart-bar"></i> Metabase</span>
+                    <span class="skill-name"><i class="ph ph-shopping-cart"></i> Shopify</span>
+                    <span class="skill-name"><i class="ph ph-whatsapp-logo"></i> WhatsApp API</span>
+                    <span class="skill-name"><i class="ph ph-git-branch"></i> Git</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 4: PROJECTS ═══ -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-label"><i class="ph ph-squares-four"></i> Selected Work</div>
+                        <h2>The Projects Closest to My Heart</h2>
+                    </div>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="ph ph-arrow-right"></i>
+                        Hire Me
+                    </a>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card glass reveal">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="ph ph-funnel-simple"></i></div>
+                            <span class="project-tag">Live</span>
+                        </div>
+                        <h3>AI Sales Automation</h3>
+                        <p>Integrated an AI-driven sales funnel routing 10,000+ daily leads with embedded AI voice and chat agents for autonomous user qualification.</p>
+                        <div class="project-tech">
+                            <span>n8n</span>
+                            <span>OpenAI</span>
+                            <span>WhatsApp API</span>
+                            <span>LeadSquared</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+15%</span>
+                                <span class="metric-label">Conversion Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;15m</span>
+                                <span class="metric-label">Lead TAT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="ph ph-shopping-cart"></i></div>
+                            <span class="project-tag">Live</span>
+                        </div>
+                        <h3>Intelligent Store Fulfillment</h3>
+                        <p>Automated Shopify order management with 3rd-party fulfillments, deploying intelligent error handling pipelines and live dashboards.</p>
+                        <div class="project-tech">
+                            <span>Shopify API</span>
+                            <span>n8n</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">1wk→24h</span>
+                                <span class="metric-label">Fulfillment Time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="ph ph-student"></i></div>
+                            <span class="project-tag">Live</span>
+                        </div>
+                        <h3>AI Proctor Voice Agent</h3>
+                        <p>Designed an AI voice agent handling automated attendance tracking and nudging via WhatsApp with integrated monitoring tools.</p>
+                        <div class="project-tech">
+                            <span>Supabase</span>
+                            <span>Claude</span>
+                            <span>ElevenLabs</span>
+                            <span>n8n</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">60%→81%</span>
+                                <span class="metric-label">Attendance Rate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="ph ph-chart-line-up"></i></div>
+                        </div>
+                        <h3>Churn Analysis Engine</h3>
+                        <p>Prompt-driven spreadsheet automation that pulls analytical data to forecast churn risk, connecting directly to business logic.</p>
+                        <div class="project-tech">
+                            <span>LLM Workflows</span>
+                            <span>Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 5: EXPERIENCE ═══ -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="ph ph-briefcase"></i> Career</div>
+                    <h2>Professional Experience</h2>
+                </div>
+
+                <div class="exp-grid">
+                    <div class="exp-card glass reveal">
+                        <span class="exp-date">July 2025 — Present</span>
+                        <h3>AI & Automation Specialist</h3>
+                        <span class="exp-company">Vedantu, Bengaluru</span>
+                        <ul>
+                            <li>Built AI-powered sales ecosystem with n8n & OpenAI processing 10,000+ leads daily, cutting TAT to under 15 minutes.</li>
+                            <li>Deployed agentic AI voice/chat bots improving lead accuracy by 27%.</li>
+                            <li>Cut manual tracking by 80% using Supabase and Metabase APIs.</li>
+                            <li>Reduced operation overhead by 65% with micro-automations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card glass reveal">
+                        <span class="exp-date">Feb 2024 — June 2025</span>
+                        <h3>Technical Consultant</h3>
+                        <span class="exp-company">Anbalippu Gifting Solutions, Chennai</span>
+                        <ul>
+                            <li>Deployed GenAI frameworks cutting manual effort by 70%.</li>
+                            <li>Scripted parameter-driven pipelines with GPT-4, Zapier, & Copilot.</li>
+                            <li>Automated HR and Investor Document generation with HITL workflows.</li>
+                            <li>Streamlined multi-department workflows including churn forecasting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 6: CONTACT ═══ -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-card glass glass--strong reveal">
+                    <div class="section-label"><i class="ph ph-chat-circle"></i> Get In Touch</div>
+                    <h2>Let's Have a Chat</h2>
+                    <p>Have a project in mind or looking for an automation specialist? Drop me a message.</p>
+                    <form class="contact-form" onsubmit="return false;">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                        <input type="email" class="form-input" placeholder="Email Address" required>
+                        <textarea class="form-input" placeholder="Tell me about your project..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary form-submit">
+                            <i class="ph ph-paper-plane-tilt"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="footer-text">© 2025 Rishi Madhavan. Built with passion.</span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/rishi-madhavan-ramesh-babu/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="mailto:rishimadhavan.r@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

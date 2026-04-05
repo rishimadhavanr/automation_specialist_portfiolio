@@ -1,0 +1,67 @@
+Rishi Madhavan Ramesh Babu 
+ Page 1 
+Rishi Madhavan Ramesh Babu 
+ (+91) 63846 20430 | rishimadhavan.r@gmail.com  
+https://www.linkedin.com/in/rishi-madhavan-ramesh-babu/ 
+PROFILE 
+AI & Automation Specialist skilled in building end-to-end automation systems and web applications using no-
+code and low-code tools. Experienced in integrating APIs, developing agentic AI workflows, and using LLMs 
+to streamline business operations, accelerate response times, and drive measurable outcomes. Strong 
+technical foundation in system design, prompt engineering, and AI workflow automation. 
+WORK EXPERIENCE  
+AI & Automation Specialist | Vedantu | Bengaluru, India  July 2025 to Present 
+ Built an AI-powered sales automation ecosystem integrating n8n, OpenAI, Gemini, LeadSquared, and 
+MoEngage to process 10,000+ leads daily, reducing turnaround time from hours to under 15 minutes. 
+ Deployed agentic AI voice and chat agents that qualified and routed leads in real time, improving lead 
+quality accuracy by 27% and conversion rate by 15%. 
+ Created a campaign management system connected to Supabase and Metabase APIs, automating data 
+cleaning and reporting, cutting manual tracking by 80%. 
+ Developed no-code applications and micro-automations across marketing, sales, and engagement 
+layers, reducing operational costs by nearly 65%. 
+ Engineered advanced prompt frameworks for LLMs to enhance personalization, data retrieval, and real-
+time decision-making across chat, voice, and CRM systems. 
+Technical Consultant | Anbalippu Gifting Solutions Pvt. Ltd., Chennai, India   Feb 2024 to June 2025 
+ Deployed GenAI automation frameworks for sales, social media, and communication, cutting manual 
+effort by over 70%. 
+ Designed structured prompts and parameterized workflows using GPT-4, Zapier, and Copilot to optimize 
+collaboration and operational tracking. 
+ Conducted business analysis on order management and finance workflows, translating functional 
+challenges into prompt-based AI solutions. 
+ Enabled scalable automation for revenue forecasting, churn analysis, and inventory tracking across 
+marketing, operations, and customer support. 
+PROJECTS 
+ AI Sales Automation (AI Voice/Chat Agents) | Vedantu - Built an AI-driven sales funnel using n8n, 
+OpenAI/Gemini, LeadSquared, and WhatsApp API to integrate AI voice agents built using Elevenlabs, AI 
+chat agent, and CRM workflows, improving conversion by 15% and reducing lead turnaround to less 
+than 15 mins. 
+ Online Store Integration | Vedantu – Automated Shopify order management and third-party fulfilment 
+using n8n and JavaScript, implementing intelligent error handling and a live dashboard to cut fulfilment 
+time from 1 week to 24-28 hours. 
+ AI Proctor  | Vedantu – Deployed an AI voice agent using n8n, Supabase, and Claude for automated 
+attendance tracking via WhatsApp API, building a monitoring dashboard, and increasing attendance 
+from 60% to 81% in two months. 
+Rishi Madhavan Ramesh Babu 
+ Page 2 
+ Churn Analysis & Forecasting Assistant | Anbalippu.in – Used prompt-driven spreadsheet 
+automations integrated with Google Sheets logic and data visualizations to track retention metrics and 
+forecast churn risk. 
+ Investor & Policy Documentation Generator | Anbalippu.in – Streamlined the creation of HR policies, 
+pitch decks, and investor briefs using HITL-based prompt engineering workflows. 
+ Tool Bit Sorting System (Academic) – Created a robotic sorting prototype using image recognition, 
+TensorFlow, and Arduino integration for manufacturing use cases. 
+EDUCATION & QUALIFICATIONS 
+University of Central Lancashire - MSc in Mechatronics and Intelligent Machines 2023 
+ First Class with Distinction | Dean's List 2023 
+ Dissertation: AI-powered Tool Bit Sorting System Using Machine Vision 
+Alagappa Chettiar Govt. College of Engineering & Technology. – BEng in Mechanical Engineering –
+                               2021 
+ First Class with Distinction 
+ Capstone: Fabrication and Characterisation of TiO2 and Al2O3 PVD Coating. 
+TECHNICAL SKILLS 
+ Automation Platforms: n8n, Make, Zapier, Supabase, Google Cloud, MoEngage, WhatsApp API, 
+Postman 
+ AI & LLMs: OpenAI GPT-4, Gemini 2.5 Pro, Claude, LangChain, Replit, Cursor. 
+ Programming & Scripting: Python, JavaScript, SQL 
+ Data & Visualization: Google Sheets API, Metabase, API integration, Reporting Automation 
+ CRMs & Tools: LeadSquared, Shopify, Retell, Repro, Elevenlabs 
+ Others: Voice AI Agent setup, Webhooks, JSON API workflows, Prompt Engineering 
