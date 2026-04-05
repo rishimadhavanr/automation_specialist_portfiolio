@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //   Phase 3: Tool logos explode (65-90% pop in, hold to 100%)
     // ═══════════════════════════════════════
 
-    const FRAME_COUNT = 180;
-    const FRAME_DIR = 'ezgif-531f53314c3e3693-jpg';
+    const FRAME_COUNT = 241;
+    const FRAME_DIR = 'videotojpg.com_download__1__jpg_20260405_165835';
     const canvas = document.getElementById('hero-canvas');
     const ctx = canvas.getContext('2d');
     const heroSection = document.getElementById('hero-sequence');
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastFrame = -1;
 
     function src(i) {
-        return `${FRAME_DIR}/ezgif-frame-${String(i).padStart(3, '0')}.jpg`;
+        return `${FRAME_DIR}/img_${String(i).padStart(5, '0')}.jpg`;
     }
 
     // Preload
