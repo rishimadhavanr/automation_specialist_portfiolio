@@ -1,26 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ═══════════════════════════════════════
-    // THEME TOGGLE
+    // LIQUID GLASS THEME SWITCHER
     // ═══════════════════════════════════════
-    const themeBtn = document.getElementById('theme-btn');
     const html = document.documentElement;
-    const icon = themeBtn.querySelector('i');
+    const themeInputs = document.querySelectorAll('.switcher__input');
     const savedTheme = localStorage.getItem('theme') || 'dark';
+    
     html.setAttribute('data-theme', savedTheme);
-    updateIcon(savedTheme);
+    
+    themeInputs.forEach(input => {
+        // Init state
+        if(input.value === savedTheme) {
+            input.checked = true;
+        }
 
-    themeBtn.addEventListener('click', () => {
-        const cur = html.getAttribute('data-theme');
-        const next = cur === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        updateIcon(next);
+        // Update theme
+        input.addEventListener('change', (e) => {
+            const newTheme = e.target.value;
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
     });
-
-    function updateIcon(t) {
-        icon.className = t === 'dark' ? 'ph ph-sun' : 'ph ph-moon';
-    }
 
     // ═══════════════════════════════════════
     // SMOOTH SCROLLING
@@ -44,9 +45,82 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
     // ═══════════════════════════════════════
-    // NAVBAR SCROLL SHADOW
+    // NAVBAR & FAB SCROLL OBSERVER
     // ═══════════════════════════════════════
     const navbar = document.querySelector('.navbar');
+    const resumeFab = document.getElementById('resume-fab');
+    const fabOriginalParent = resumeFab ? resumeFab.parentElement : null;
+    let fabIsSticky = false;
+
+    const FAB_TARGET_BOTTOM = 32;
+    const FAB_TARGET_RIGHT = 32;
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 10) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+
+        if(resumeFab && fabOriginalParent) {
+            if (window.scrollY > 500 && !fabIsSticky) {
+                fabIsSticky = true;
+
+                // 1. Capture current position on screen
+                const rect = resumeFab.getBoundingClientRect();
+                const startX = rect.left;
+                const startY = rect.top;
+
+                // 2. Move to body and position fixed at its current location (no visual jump)
+                resumeFab.style.transition = 'none';
+                resumeFab.style.position = 'fixed';
+                resumeFab.style.left = startX + 'px';
+                resumeFab.style.top = startY + 'px';
+                resumeFab.style.right = 'auto';
+                resumeFab.style.bottom = 'auto';
+                document.body.appendChild(resumeFab);
+
+                // 3. Force reflow, then animate to bottom-right corner
+                resumeFab.offsetHeight;
+                resumeFab.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                resumeFab.style.left = (window.innerWidth - resumeFab.offsetWidth - FAB_TARGET_RIGHT) + 'px';
+                resumeFab.style.top = (window.innerHeight - resumeFab.offsetHeight - FAB_TARGET_BOTTOM) + 'px';
+
+                resumeFab.classList.add('is-sticky');
+
+            } else if (window.scrollY <= 500 && fabIsSticky) {
+                fabIsSticky = false;
+
+                // Calculate where the button needs to fly back to
+                // Temporarily put a ghost in the original parent to measure
+                const ghost = document.createElement('span');
+                ghost.style.display = 'inline-flex';
+                ghost.style.visibility = 'hidden';
+                ghost.style.width = resumeFab.offsetWidth + 'px';
+                ghost.style.height = resumeFab.offsetHeight + 'px';
+                fabOriginalParent.appendChild(ghost);
+                const targetRect = ghost.getBoundingClientRect();
+                ghost.remove();
+
+                // Animate back to the original position
+                resumeFab.style.transition = 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                resumeFab.style.left = targetRect.left + 'px';
+                resumeFab.style.top = targetRect.top + 'px';
+
+                resumeFab.classList.remove('is-sticky');
+
+                // After animation completes, return to DOM flow
+                setTimeout(() => {
+                    if (!fabIsSticky) {
+                        resumeFab.style.transition = '';
+                        resumeFab.style.position = '';
+                        resumeFab.style.left = '';
+                        resumeFab.style.top = '';
+                        resumeFab.style.right = '';
+                        resumeFab.style.bottom = '';
+                        fabOriginalParent.appendChild(resumeFab);
+                    }
+                }, 500);
+            }
+        }
+    }, { passive: true });
 
     // ═══════════════════════════════════════
     // SCROLL-SYNCED FRAME ANIMATION
